@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/stylesheet.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="wrapper">
+            <h1>Blackjack</h1>
+            <div class="flexbox">
+                <div id="dealer" class="player">
+                    <h2>Dealer</h2>
+                    <div class="cards"></div>
+                    <div class="score">Score: 0</div>
+                    <div class="action"></div>
+                </div>
+                <div id="computer" class="player">
+                    <h2>Computer</h2>
+                    <div class="cards"></div>
+                    <div class="score">Score: 0</div>
+                    <div class="action"></div>
+                </div>
+                <div id="user" class="player">
+                    <h2>You</h2>
+                    <div class="cards"></div>
+                    <div class="score">Score: 0</div>
+                    <div class="action"></div>
+                </div>
+            </div>
+            <button id="start-button">Start Game</button>
+            <button id="hit-button" style="display: none;">Hit</button>
+            <button id="stand-button" style="display: none;">Stand</button>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../javascript/blackjack.js"></script>
+</body>
+</html>
